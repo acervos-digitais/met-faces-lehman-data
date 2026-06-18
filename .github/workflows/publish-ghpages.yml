@@ -26,6 +26,6 @@ jobs:
         git reset .
         echo "<html><body>HI!</body></html>" >> index.html
         touch .nojekyll
-        git add .nojekyll index.html image json
+        git add .nojekyll index.html image/500 json/*.json
         git commit -m $COMMIT_MSG
         git push -f origin gh-pages
